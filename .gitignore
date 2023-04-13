@@ -1,3 +1,6 @@
+# By default do not track anything in the data directory
+data/*
+
 # History files
 .Rhistory
 .Rapp.history
