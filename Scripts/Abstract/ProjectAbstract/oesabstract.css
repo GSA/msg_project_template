@@ -1,0 +1,89 @@
+
+* {
+	font-size: 100%;
+	font-family: Lato;
+}
+
+body{
+	counter-reset:table figure;
+	column-count: 2;
+	font-size: 10pt;
+}
+
+
+h1.title{
+	font-size: 30pt;
+	text-align: right;
+	text-transform: uppercase;
+	color: #03CAB9;
+	column-span: all;
+	-webkit-column-span: all;
+	-moz-column-span: all;
+}
+
+@supports not (column-span: all) {
+	.span-3-columns {
+		position: absolute;
+		top:0;right:0;left:0;
+	}
+}
+
+h3.subtitle{
+	font-size: 16pt;
+	text-align: right;
+	column-span: all;
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	color: #2E9AC4;
+}
+
+h4{
+	display: inline;
+	color: #FA5646;
+	float: left;
+	font-size: 1em;
+	line-height: 1;
+	padding-right: .5em;
+	margin: 0;
+}
+
+
+pre, code, kbd, samp {
+  color: #000;
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 0.98em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: #999999;
+	text-align: right;
+	font-size: 8pt;
+}
+
+
+caption::before{
+	counter-increment: table;
+	content: "Table " counter(table) ": ";
+}
+
+.caption::before{
+	counter-increment: figure;
+	content: "Figure " counter(figure) ": ";
+	font-weight: bold;
+	text-align: left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666666;
+}

@@ -1,0 +1,222 @@
+---
+title: |
+  | What should we do and why?
+  | Work principles for behavioral insights teams.
+author: Jake Bowers
+institute: |
+     | Political Science and Statistics, University of Illinois @ Urbana-Champaign
+     | Fellow, White House Social and Behavioral Sciences Team
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  beamer_presentation:
+    keep_tex: yes
+    latex_engine: xelatex
+    slide_level: 2
+    template: sbst.beamer
+    toc: yes
+  ioslides_presentation:
+    css: sbstpresentation.css
+    logo: ../Images/OES.png
+    smaller: yes
+---
+
+
+```{r setup, include=FALSE, echo=FALSE, cache=FALSE}
+## To compile this by hand do:
+## library(rmarkdown)
+## render("presentation.Rmd")
+## OR
+## Rscript -e "library(methods);library(knitr); knit('presentation.Rmd',output='presentation.md')"
+## On my system then:
+## pandoc +RTS -K512m -RTS presentation.utf8.md --to beamer --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output presentation.pdf --template sbst.beamer --table-of-contents --slide-level 2 --highlight-style tango --latex-engine /Library/TeX/texbin/xelatex
+
+## the 'toc: yes' line above tricks pandoc into running latex twice so that we can see the nice logos
+
+# Some customization.  You can alter or delete as desired (if you know what you are doing).
+# knitr settings to control how R chunks work.
+
+require(knitr)
+opts_chunk$set(
+  size = "scriptsize",    # slightly smaller font for code
+  echo = TRUE,
+  results = 'markup',
+  strip.white = TRUE,
+  cache = FALSE,
+  highlight = TRUE,
+  width.cutoff = 60,
+  out.width = '.9\\textwidth',
+  message = FALSE,
+  comment = NA,
+  tidy = TRUE,     # display code as typed
+  tidy.opts = list(blank = FALSE, width.cutoff = 60))
+```
+
+# Introducing Behavioral Insights Teams
+
+## Behavioral Insights Teams in Government
+
+
+
+> A growing body of evidence demonstrates that behavioral science insights---research findings from fields such as behavioral economics and psychology about how people make decisions and act on them---can be used to design government policies to better serve the American people. (President Barak Obama's Executive Order 13707 "Using Behavioral Insights To Better Serve the American People")
+
+[The UK Nudge Unit](http://www.behaviouralinsights.co.uk/about-us/)
+
+\medskip
+
+[The White House SBST](http://sbst.gov)
+
+\medskip
+
+[The EU](https://ec.europa.eu/jrc/en/event/conference/biap-2016#country-overviews)
+
+\medskip
+
+[New South Wales Intro to Behavioral Insights Teams](https://www.youtube.com/watch?v=pDub6gG1yxw&feature=youtu.be)
+
+\medskip
+
+\only{<2>}{
+\textbf{\textcolor{blue}{
+BI teams translate (and extend) knowledge from (mostly) randomized experiment-based research into public policy.}
+}}
+
+# Person oriented government by design (and science)
+
+## UX Design for person oriented government
+
+UX (user experience) design emphasizes a connection between designer and user.
+
+\medskip
+
+> Cognitive empathy requires not a face, not preferences and demographics, but the underlying reasoning, reactions, and guiding principles. Without these you cannot develop empathy. And if you cannot develop empathy, you cannot wield it---you cannot walk in someone’s shoes. [Describing Personas by Indi Young](https://medium.com/@indiyoung/describing-personas-af992e3fc527#.vpydktp99)
+
+> At the beginning of a user experience research project, it’s okay to talk about what the segments look like. The segments are one view of a user profile; personas are another. But they’re based on totally different data. Segments come from self-reported survey data, usually. Personas should be developed after observing users in their own contexts doing their own tasks. [Avoiding Demographics When Recruiting Participants: An Interview with Dana Chisnell](https://articles.uie.com/recruiting_participants/)
+
+## Example: myUSA
+
+[MyUSA](https://github.com/18F/myusa-ux/blob/master/images/front%20page.png)
+
+[MyUSA Signup](https://github.com/18F/myusa-ux/blob/master/images/Screen%20Shot%202014-12-19%20at%202.54.49%20PM.png)
+
+[UX Transcript](https://github.com/18F/myusa-ux/blob/master/research/usability/sprint22_research-data.md)
+
+[UX report on MyUSA](https://github.com/18F/myusa-ux/blob/master/research/usability/sprint33_small-business-results.md)
+
+
+## Science for person oriented government
+
+<!-- includegraphics[width=.9\textwidth]{ScienceInTheHouse.png} -->
+
+## Science for person oriented government
+
+
+What follows from valuing science? What do we add to design?
+
+\medskip
+
+Why not Behavioral Claims Teams?  Why does science produce "insights"?
+
+## Science for person oriented government
+
+Why not Behavioral Claims Teams?  Why does science produce "insights"?
+
+\medskip
+
+1) No one study produces certain knowledge. Knowledge arises from a community.
+2) No one person produces certain knowledge. Investigators must be comfortable with uncertainty and doubt.
+
+
+\bigskip
+\only{<2->}{
+
+BTW, these ideas enable frequentist statistical inference: a $p$-value / confidence interval is a $p$-value/confidence interval, no more no less.
+}
+
+# What follows from practicing humility and valuing community?
+
+## Practice Humility with Questions
+
+ - Act ethically
+ - Articulate more than one approach to any question
+ - Recognize the expertise of the bureaucrats
+
+## Practice Humility with Tests and Plans
+
+ - Test all suggestions in as fair and clear manner as possible.
+ - Plan the test and analyses. Ensure stakeholders have a chance to approve the plan.
+ - Plan for heterogeneity of effects. Worry more about policies with average benefits having a few or rare negative effects.
+
+Remember the power of randomization for clear and fair testing.
+
+## Practice Community with Openness
+
+The community includes the public, investigators inside and outside of government, and civil servants.
+
+ - Build Trust by working in the open and inviting collaboration.
+ - Report all results to enhance learning and build trust.
+ - Work in the open whenever possible.
+
+Working in the open involves sharing as much of our work and workflow as possible with as many people as possible.
+
+
+# Concrete Actions and Tools for 2016
+
+## Use plain text
+
+Writing memos, reports, or analyses in formats that are propriety and/or likely to change quickly and/or cost money to read raises barriers to collaboration across both space (with others) and time (with the team itself should it desire to use materials from past studies for the future.)
+
+## Use open-source and multi-platform tools
+
+Reduce barriers with potential collaborators.
+
+## Assume others will want to reproduce the work.
+
+This means that all analyses should be written as if someone else, who is not a part of the team's social network, ought to be able to reproduce the analyses of the team (to the extent possible given data sharing limitations).
+
+##  Work in the Open and Take advantage of the cloud
+
+My favorite way to work in the open right now is to use [GitHub](http://github.com) because it not only encourages a workflow in which people copy and improve and change others' code, but prevents old files from being clobbered with new files, tracks and threads discussions about topics, and enables online editing and easy website creation for quick sharing of documents and results.
+
+
+## Finally
+
+Most of all, act as if you are on a team that extends beyond the office, into the future, across national boundaries. Assume that team will support and add surprising value to your work (once in a while). Act to enable that team to work with you.
+
+
+# End Matter
+
+## Sources and Inspirations
+
+This document builds on the [*commitment of the federal government to
+openness*](https://www.whitehouse.gov/open) and especially on my
+interpretation of the detailed [*US Open Government National Action Plan
+3.0*](https://www.whitehouse.gov/sites/default/files/microsites/ostp/final_us_open_government_national_action_plan_3_0.pdf)
+
+\bigskip
+
+The injunction to "work in the open" (and internally to "share not send") comes from [*18F*](https://18f.gsa.gov/2014/07/31/working-in-public-from-day-1/)
+
+
+\bigskip
+
+This document is currently hosted on github at <http://github/sbstusa/transparency>. Comments welcome.
+
+\appendix
+
+## More inspiration from 18F
+
+[18F Design Principles](https://github.com/18F/myusa-ux/blob/master/research/memos/design-principles.md)
+
+[18F Design Principles Definition](https://pages.18f.gov/design-principles-guide/define/)
+
+[18F Design and Production Process](https://pages.18f.gov/lean-product-design/)
+
+
+## More Inspiration: Statements of Principles
+
+[EGAP Design Principles](http://egap.org/egap-statement-of-principles)
+
+[Australia Government Design Principles](http://www.designprinciplesftw.com/collections/australia-designgov-principles)
+
+[Code for America Design Principles](http://www.designprinciplesftw.com/collections/principles-for-21st-century-government)
+
