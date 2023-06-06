@@ -1,7 +1,7 @@
 Version: 1.0
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
+RestoreWorkspace: No
+SaveWorkspace: No
 AlwaysSaveHistory: Default
 
 EnableCodeIndexing: Yes
@@ -11,3 +11,8 @@ Encoding: UTF-8
 
 RnwWeave: knitr
 LaTeX: XeLaTeX
+
+BuildType: Makefile
+MakefilePath: C:/Users/JacobWBowers/source/repos/msg_project_template
+
+QuitChildProcessesOnExit: Yes
