@@ -13,7 +13,7 @@
 # Here it just says to run the file with R
 
 Data/dino_data.csv: Data/make_dino_data.R
-	R --file Data/make_dino_data.R
+	R --file=Data/make_dino_data.R
 
 Output/Analysis/dino_plot.pdf: Data/dino_data.csv Scripts/Analysis/dino_plot.R
-	R --file Scripts/Analysis/dino_plot.R
+	R --file=Scripts/Analysis/dino_plot.R
