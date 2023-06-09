@@ -29,7 +29,7 @@
 %\newcommand{\euro}{€}
 
 \setmainfont{Lato}[
-Path = ../Fonts/,
+Path = ../../../Fonts/,
 Extension= .ttf,
 UprightFont = *-Regular,
 BoldFont       = *-Bold,
