@@ -13,6 +13,5 @@ RnwWeave: knitr
 LaTeX: XeLaTeX
 
 BuildType: Makefile
-MakefilePath: C:/Users/JacobWBowers/source/repos/msg_project_template
 
 QuitChildProcessesOnExit: Yes
