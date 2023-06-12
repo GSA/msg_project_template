@@ -43,3 +43,6 @@ vignettes/*.pdf
 
 # OS Junk
 .DS_Store
+
+# Junk from renv
+renv/*
