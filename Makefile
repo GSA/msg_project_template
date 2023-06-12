@@ -1,6 +1,8 @@
 # This file tracks how inputs and outputs relate in the project
 # We assume you will use it from within the root directory of the project
 
+all: Output/Analysis/dino_plot.pdf
+
 # For example we have two targets or outputs below: dino_data.csv and dino_plot.pdf
 
 
@@ -17,3 +19,5 @@ Data/dino_data.csv: Data/make_dino_data.R
 
 Output/Analysis/dino_plot.pdf: Data/dino_data.csv Scripts/Analysis/dino_plot.R
 	R --file=Scripts/Analysis/dino_plot.R
+	
+
