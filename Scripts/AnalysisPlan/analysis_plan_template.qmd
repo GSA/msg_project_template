@@ -49,9 +49,9 @@ or project-specific page\].
 ## Research Question(s)
 
 > Briefly state the primary and any secondary hypotheses to be tested. Aim for
-> plain language. Statistical models and details of hypothesis tests will be
-> covered later; the purpose here is to set the stage for the sections that
-> follow.
+> plain language. Statistical models and details of estimation and hypothesis
+> tests will be covered later; the purpose here is to set the stage for the
+> sections that follow.
 
 Insert text here, and delete the gray prompt above when the document is
 final
@@ -63,8 +63,8 @@ will be made to the raw data with respect to data structure and variables.
 
 ## Data Source(s):
 
-Additional administrative data that may be useful for exploratory analysis
-includes:
+> Main data sources and additional administrative data that may be useful for
+> exploratory analysis.
 
 ## Outcomes to Be Analyzed:
 
@@ -77,8 +77,6 @@ includes:
 
 Insert text here, and delete the gray prompt above when the document is
 final
-
-## Transformations of Data Structure:
 
 ### Added Variables
 
