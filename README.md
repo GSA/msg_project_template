@@ -46,7 +46,7 @@ Here is a partial listing of the contents with some explanations.
 ├── .gitignore
 ├── Makefile # This file tells us which scripts use which inputs and produce which outputs
 ├── ProjectTemplate.Rproj
-├── Data # A directory for data. We will almost never track the contents in github.
+├── Data # A directory for data. We will almost never track the contents in githu.
 │  ├── README.md
 │  └── make_dino_data.R
 
