@@ -1,6 +1,6 @@
 body{
 	counter-reset:table figure;
-	font-family: Lato
+	font-family: Arial
 }
 
 caption::before{
