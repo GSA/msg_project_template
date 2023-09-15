@@ -1,0 +1,63 @@
+---
+title: Re-Analysis of '1727 VHA Concierge Care'
+author: Jake Bowers
+date: "`r format(Sys.time(), '%a %b %d %X %Y')`"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    fig_caption: true
+    css: oes.css
+  pdf_document:
+    fig_caption: true
+    fig_height: 7
+    fig_width: 7
+    keep_tex: yes
+    latex_engine: xelatex
+    md_extensions: +autolink_bare_uris+tex_math_dollars
+    number_sections: yes
+    template: oesreport.latex
+---
+
+<!-- Much of the intro text from the Project Summary in the Team Drive -->
+
+```{r setup, results='hide', message=FALSE, warning=FALSE}
+# Clear environment, set working directory, load packages & data
+rm(list = ls())
+source("setup.R")
+```
+
+
+# Design Notes
+
+The design is blocked by month with each veteran assigned to receive an email using formal language, an email using informal language, and no email (the control group). Assignment was in equal numbers within month.
+
+The primary outcome is number of enrollments, especially within 30 days.
+
+And the team pre-registered a subgroup analysis of Combat Veterans as well.
+
+# Overview of results
+
+Fill in here after the bottom part is done so people do not have to wade through a lot of code.
+
+# Data
+
+## Data Setup
+
+## Design variables
+
+## More design considerations:
+
+# Analysis strategy:
+
+# Outcomes
+
+# Analysis
+
+## Test of the null of no effects
+
+## Estimation of the average treatment effect
+
+# Analysis to Report {#analysisreport}
+
+# References
